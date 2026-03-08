@@ -1,6 +1,6 @@
 cask "ccvv" do
-  version "1.4.0"
-  sha256 "48abb20d1884f7f3049657fe04a57bd7acd80a8bc92f919cf55850d3b8ba44e3"
+  version "1.5.0"
+  sha256 "6aae65c77460f215152cc8e7d431c55520fa5bc8936b7003fbc8733ddb94ef32"
 
   url "https://github.com/php-workx/ccvv/releases/download/v#{version}/ccvv-#{version}.zip"
   name "ccvv"
@@ -10,4 +10,5 @@ cask "ccvv" do
   depends_on macos: ">= :ventura"
 
   app "ccvv.app"
+  binary "ccvv.app/Contents/MacOS/ccvv-cli", target: "ccvv"
 end
